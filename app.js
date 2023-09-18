@@ -23,9 +23,9 @@ const courses = require('./routes/course');
 const events = require('./routes/event');
 
 // Using routes
-app.use('/api/v1', posts);
-app.use('/api/v1', users);
-app.use('/api/v1', courses);
-app.use('/api/v1', events);
+app.use('/api/v1/post', posts);
+app.use('/api/v1/user', users);
+app.use('/api/v1/course', courses);
+app.use('/api/v1/event', events);
 
 module.exports = app;
